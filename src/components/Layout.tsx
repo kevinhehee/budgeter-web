@@ -10,7 +10,7 @@ export function Layout() {
       <aside className="sidebar">
         <div>
           <h1>Budgeter</h1>
-          <p className="muted">Backend-first finance app</p>
+          <p className="muted">Personal finance app</p>
         </div>
 
         <nav className="nav">
@@ -27,7 +27,7 @@ export function Layout() {
 
         <div className="sidebar-footer">
           <div className="user-box">
-            <strong>{user?.displayName ?? "User"}</strong>
+            <strong>{user?.name ?? "User"}</strong>
             <span className="muted">{user?.email}</span>
           </div>
           <button className="secondary-button" onClick={logout}>
